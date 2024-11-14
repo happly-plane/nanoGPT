@@ -10,7 +10,7 @@ import numpy as np
 #     with open(input_file_path, 'w', encoding='utf-8') as f:
 #         f.write(requests.get(data_url).text)
 
-with open(input_file_path, 'r', encoding='utf-8') as f:
+with open('input.txt', 'r', encoding='utf-8') as f:
     data = f.read()
 n = len(data)
 train_data = data[:int(n*0.9)]
